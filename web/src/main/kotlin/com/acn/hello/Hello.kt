@@ -5,6 +5,9 @@ import org.springframework.boot.runApplication
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner
 import org.springframework.context.annotation.Bean
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @SpringBootApplication
 class HelloApp {
@@ -12,7 +15,7 @@ class HelloApp {
 
     @Bean
     fun init() = CommandLineRunner {
-        log.info("Hello World")
+        log.info("HelloApp Start, open http://localhost:8080 see the welcome message")
 
     }
 }
