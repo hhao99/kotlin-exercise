@@ -1,6 +1,6 @@
-package hello
+package com.acn.hello
 
-class Hello {
+class HelloApp {
 
 }
 
